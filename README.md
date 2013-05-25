@@ -1,6 +1,12 @@
-# Rinne
+Rinne
+================================================================
 
 Rinne - Rinne is snake case convert to camel case.
+
+[![Build Status](https://travis-ci.org/naoto/rinne.png?branch=master)](https://travis-ci.org/naoto/rinne)
+[![Gem Version](https://badge.fury.io/rb/rinne.png)](https://badge.fury.io/rb/rinne)
+[![Code CLimate](https://codeclimate.com/github/naoto/rinne.png)](https://codeclimate.com/github/naoto/rinne)
+[![Coverage Status](https://coveralls.io/repos/naoto/rinne/badge.png?branch=master)](https://coveralls.io/r/naoto/rinne)
 
 ## Installation
 
