@@ -1,6 +1,6 @@
 # Rinne
 
-Rinne is snake case convert to camel case.
+Rinne - Rinne is snake case convert to camel case.
 
 ## Installation
 
