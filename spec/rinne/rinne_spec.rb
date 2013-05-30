@@ -12,8 +12,8 @@ describe Rinne do
       Rinne.camelize("rinne_tensei").should eq("RinneTensei")
     end
 
-    it 'should file name' do
-      Rinne.camelize("foo_bar.rb","rb").should eq("FooBar")
+    it 'should module name' do
+      Rinne.camelize("karma-rinne_tensei").should eq("Karma::RinneTensei")
     end
 
     it 'should alias method' do
@@ -22,6 +22,10 @@ describe Rinne do
 
     it 'should load class name' do
       Rinne.classify('/path/to/rinne_tensei.rb').should eq('RinneTensei')
+    end
+
+    it 'should file name' do
+      Rinne.classify("foo_bar.rb","rb").should eq("FooBar")
     end
   end
 
