@@ -2,10 +2,17 @@ require "rinne/version"
 
 module Rinne
 
-  def self.tensei(spell)
-    spell.split(/_/).map { |word|
-      word.capitalize!
-    }.join
+  class << self
+    def camelize(spell, filetype = nil)
+      spell.gsub(/\.#{filetype}/,'').split(/_/).map { |word|
+        word.capitalize!
+      }.join
+    end
+    alias :tensei :camelize
+
+    def classify(path)
+      camelize File.basename(path, ".*")
+    end
   end
-  
+
 end
