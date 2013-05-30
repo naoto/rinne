@@ -28,6 +28,9 @@ Or install it yourself as:
 require 'rinne'
 
 Rinne.tensei("rine_tensei") #=> "RinneTensei"
+Rinne.camelize("rinne_tensei") #=> "RinneTensei"
+Rinne.classify("/path/to/rinne_tensei.rb") #=> "RinneTensei"
+Rinne.classify("file_name.rb","rb") #=> "FileName"
 ```
 
 ## Contributing
