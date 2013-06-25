@@ -27,6 +27,10 @@ describe Rinne do
     it 'should file name' do
       Rinne.classify("foo_bar.rb","rb").should eq("FooBar")
     end
+
+    it 'should snake case' do
+      Rinne.to_snake("camelCase").should eq("camel_case")
+    end
   end
 
 end
